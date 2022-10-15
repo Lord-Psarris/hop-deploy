@@ -13,7 +13,7 @@ const wallet = new Wallet({ createAccessKeyFor: process.env.CONTRACT_NAME })
 
 // Abstract the logic of interacting with the contract to simplify your flow
 const helloNEAR = new HelloNEAR({ contractId: process.env.CONTRACT_NAME, walletToUse: wallet });
-
+ 
 // Setup on page load
 window.onload = async () => {
   const isSignedIn = await wallet.startUp()
